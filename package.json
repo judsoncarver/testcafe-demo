@@ -1,0 +1,19 @@
+{
+	"name": "testcafe-demo",
+	"version": "1.0.0",
+	"description": "simple demo of testcafe",
+	"main": "index.js",
+	"scripts": {
+		"clean": "mkdir -p test-results",
+		"e2e": "npx testcafe -e chrome --hostname=127.0.0.1",
+		"e2e:xunit": "npx testcafe -e chrome --hostname=127.0.0.1 --reporter xunit:test-results/res.xml"
+	},
+	"keywords": [],
+	"author": "Judson Carver",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"testcafe": "^1.9.4",
+		"testcafe-reporter-xunit": "^2.1.0"
+	}
+}
